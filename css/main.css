@@ -1,0 +1,56 @@
+/* 
+    Document   : main
+    Created on : 2013-9-1, 20:06:36
+    Author     : jeff
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.center{
+  margin: 0 auto;
+}
+.w_100{
+  width:100%;
+}
+.w960{
+  width:960px;
+}
+.w690{
+  width:690px;
+}
+.w250{
+  width:250px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mr10{
+  margin-right: 10px;
+}
+
+
+#main{
+  border: 1px solid #aaa;
+  box-shadow: 0 0 20px rgba(192, 192, 192, 0.4);
+}
+#header{
+  height: 180px;
+  padding: 20px 0px;
+}
+#logo{
+  width:160px;
+  height:160px;
+}
+#slogon{
+  margin-left: 30px;
+  margin-top: 40px;
+}
+#flash{
+  margin:0 auto;
+}
+#footer{
+  margin-top: 60px;
+}
+
+
