@@ -6,7 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-
+/*主体部分 begin*/
 .center{
   margin: 0 auto;
 }
@@ -28,7 +28,6 @@
 .mr10{
   margin-right: 10px;
 }
-
 
 #main{
   border: 1px solid #aaa;
@@ -52,5 +51,24 @@
 #footer{
   margin-top: 60px;
 }
+/*主体部分 end*/
 
+/*列表部分 begin*/
+.list{
+  margin:20px 10px 0px 10px;
+}
+.list-title{
+  margin-left: 20px;
+}
+.list-title h5{
+  font-size: 20px !important;
+}
+.list-article-info{
+  line-height: 20px;
+  margin: 10px 5px;
+}
+.article-section{
 
+}
+
+/*列表部分 end*/
