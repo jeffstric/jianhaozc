@@ -48,6 +48,9 @@
 #flash{
   margin:0 auto;
 }
+#breadcrumb{
+  margin-top: 10px;
+}
 #footer{
   margin-top: 60px;
 }
@@ -67,11 +70,15 @@
   line-height: 20px;
   margin: 10px 5px;
 }
+.arc-sec-content > p{
+  text-indent: 2em;
+}
 
 .list{
   width:100%;
   margin-top: 20px;
   padding: 10px;
+  border-left:1px solid #eee;
 }
 .list-title{
   height: 40px;
@@ -93,3 +100,15 @@
   font-size: 17px;
 }
 /*列表部分 end*/
+
+/*文章部分 begin*/
+#article{
+  padding: 20px;
+}
+#article .article_info{
+   margin-top: 30px;
+}
+#article .article_content p{
+  text-indent: 2em;
+}
+/*文章部分 end*/
