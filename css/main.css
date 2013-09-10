@@ -25,13 +25,28 @@
 .ml10{
   margin-left: 10px;
 }
+.mt20{
+  margin-top: 20px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.ml40{
+  margin-left: 40px;
+}
 .mr10{
   margin-right: 10px;
 }
+.center{
+  margin:0 auto;
+}
+.w300{
+  width:300px;
+}
 
 #main{
-  border: 1px solid #aaa;
   box-shadow: 0 0 20px rgba(192, 192, 192, 0.4);
+  border-radius: 8px;
 }
 #header{
   height: 180px;
@@ -57,6 +72,10 @@
 /*主体部分 end*/
 
 /*列表部分 begin*/
+#slide{
+  border-left:1px solid #eee;
+}
+
 .art-sec{
   margin:20px 10px 0px 10px;
 }
@@ -78,7 +97,6 @@
   width:100%;
   margin-top: 20px;
   padding: 10px;
-  border-left:1px solid #eee;
 }
 .list-title{
   height: 40px;
@@ -87,26 +105,56 @@
   font-weight: bolder;
   margin-bottom: 10px;
 }
-.list-item{
+ul.list-ul{
+  margin-left: 5px;
+}
+li.list-item{
   margin:5px 10px;
   padding: 2px 0px;
   border-bottom: 1px dotted #eee;
   position: relative;
   height:20px;
-}
-.list-item-title{
-  line-height: 20px;
-  height:20px;
-  font-size: 17px;
+  list-style: none;
+   font-size: 17px;
 }
 /*列表部分 end*/
+
+/*产品 grid部分 begin*/
+.product_grid{
+  /*border: 1px solid #DDDDDD;*/
+  padding: 10px;
+  width: 320px;
+}
+.product_grid .img_show{
+  width:320px;
+  height:215px;
+}
+.product_grid .img_show .img-rounded{
+  border-radius: 6px 6px 0 0;
+}
+.product_grid .product_info{
+  padding: 0px 10px;
+  border-radius:0 0 6px 6px ;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.product_grid .product_info .product_info_name{
+  width:60%;
+  overflow: hidden;
+}
+.product_grid .product_info .product_info_time{
+  width:40%;
+  overflow: hidden;
+}
+/*产品 grid部分 end*/
 
 /*文章部分 begin*/
 #article{
   padding: 20px;
 }
 #article .article_info{
-   margin-top: 30px;
+  margin-top: 30px;
 }
 #article .article_content p{
   text-indent: 2em;
