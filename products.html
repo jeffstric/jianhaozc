@@ -1,20 +1,16 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
   <head>
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container  w960" id='main'>
-      <div id="header" class="w_100">
+    <div class="container-fluid" id='main'>
+      <div id="header">
         <div class="clearfix ml10" >
           <div id="logo" class="pull-left">
             <a href="#" rel="#"><img src="img/example_logo.jpeg" alt="ABCDEFGHIJ有限公司"/></a>
@@ -27,9 +23,9 @@ and open the template in the editor.
         <div class="navbar navbar-inverse" id="nav">
           <div class="navbar-inner">
             <ul class="nav">
-              <li><a href="index.html">首页</a></li>
+              <li class="active"><a href="index.html">首页</a></li>
               <li><a href="list.html">列表页</a></li>
-              <li class="active"><a href="products.html">产品页</a></li>
+              <li><a href="products.html">产品页</a></li>
               <li><a href="article.html">文章页</a></li>
             </ul>
           </div>
@@ -37,8 +33,10 @@ and open the template in the editor.
 
       </div>
       <div style='clear: both'></div>
-      <div class="clearfix">
-        <div id="products_list" class=" pull-left w690 ml10">
+      
+      <div class='row-fluid'>
+        
+        <div id="products_list" class=" pull-left span9 ml10">
           <!--产品 begin-->
           <div class="clearfix mt20">
             <div class="product_grid pull-left">
@@ -78,9 +76,7 @@ and open the template in the editor.
 
               </div>
             </div>
-          </div>
-
-          <div class="clearfix mt20">
+            
             <div class="product_grid pull-left">
               <div class="img_show">
                 <a href="#">
@@ -99,7 +95,7 @@ and open the template in the editor.
 
               </div>
             </div>
-
+            
             <div class="product_grid pull-left">
               <div class="img_show">
                 <a href="#">
@@ -118,7 +114,48 @@ and open the template in the editor.
 
               </div>
             </div>
+            
+            <div class="product_grid pull-left">
+              <div class="img_show">
+                <a href="#">
+                  <img class="img-rounded" src="img/example_product_grid.jpg"/>
+                </a>
+              </div>
+              <div class="clearfix product_info">
+                <div class="pull-left product_info_name" style="width: 60%;">
+                  <a href="#">
+                    <h5>产品一</h5>
+                  </a>
+                </div>
+                <div class="pull-right product_info_time muted mt10" style="width: 40%;">
+                  发表于2013-08-11
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="product_grid pull-left">
+              <div class="img_show">
+                <a href="#">
+                  <img class="img-rounded" src="img/example_product_grid.jpg"/>
+                </a>
+              </div>
+              <div class="clearfix product_info">
+                <div class="pull-left product_info_name" style="width: 60%;">
+                  <a href="#">
+                    <h5>产品一</h5>
+                  </a>
+                </div>
+                <div class="pull-right product_info_time muted mt10" style="width: 40%;">
+                  发表于2013-08-11
+                </div>
+
+              </div>
+            </div>
+            
+            
           </div>
+
           <!--产品 end-->
           <!-- pager -->
           <div class="center w300">
@@ -137,12 +174,12 @@ and open the template in the editor.
           <!-- pager end-->
         </div>
 
-        <div id="slide" class=" pull-left w250">
+        <div id="slide" class=" pull-left span3">
 
           <div class="list">
             <form class="form-search">
               <div class="input-append">
-                <input type="text" class="span2 search-query">
+                <input type="text" class="span10 search-query">
                 <button type="submit" class="btn">搜索</button>
               </div>
             </form>
@@ -175,6 +212,9 @@ and open the template in the editor.
       </div>
 
     </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type='text/javascript'>
       $(document).ready(function() {
 //        $('#myCarousel').carousel();
