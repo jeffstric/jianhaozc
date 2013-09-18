@@ -10,8 +10,15 @@
 .center{
   margin: 0 auto;
 }
-.ml10{
-  margin-left: 10px;
+@media (max-width: 320px){
+  .ml10{
+    margin-left: 0px;
+  }
+}
+@media (min-width: 610px){
+  .ml10{
+    margin-left: 10px;
+  }
 }
 .mt20{
   margin-top: 20px;
@@ -37,16 +44,24 @@
   border-radius: 8px;
 }
 #header{
-  height: 180px;
-  padding: 20px 0px;
+  padding: 20px 0px 0px 0px;
 }
-#logo{
-  width:160px;
-  height:160px;
+@media (max-width: 610px){
+  #logo{
+    width:160px;
+    height:160px;
+    margin: 0 auto;
+  }
 }
-#slogon{
-  margin-left: 30px;
-  margin-top: 40px;
+@media (min-width: 620px){
+  #logo{
+    width:160px;
+    height:160px;
+  }
+  #slogon{
+    margin-left: 30px;
+    margin-top: 40px;
+  }
 }
 #flash{
   margin:0 auto;
@@ -104,15 +119,24 @@ li.list-item{
   position: relative;
   height:20px;
   list-style: none;
-   font-size: 17px;
+  font-size: 17px;
 }
 /*列表部分 end*/
 
 /*产品 grid部分 begin*/
-.product_grid{
-  /*border: 1px solid #DDDDDD;*/
-  padding: 10px;
-  width: 320px;
+@media (max-width: 320px){
+  .product_grid{
+    /*border: 1px solid #DDDDDD;*/
+    padding: 0px;
+    width: 320px;
+  }
+}
+@media (min-width: 610px){
+  .product_grid{
+    /*border: 1px solid #DDDDDD;*/
+    padding: 10px;
+    width: 320px;
+  }
 }
 .product_grid .img_show{
   width:320px;
